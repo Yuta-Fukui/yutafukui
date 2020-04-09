@@ -1,19 +1,24 @@
 <template>
   <div id="headerSection">
-    <button @click="toggle" class="btn btn-success"><img src="sozai_cman_jp_20200408124046.png"></button>
+    <button @click="toggle" class="headerButton">
+      <img src="../assets/menu.png" width="30px" height="30px">
+    </button>
     <Drawer @close="toggle" align="left" :closeable="true">
-      <div v-if="open"></div>
+      <div v-if="open"><Menu /></div>
     </Drawer>
   </div>
 </template>
  
 <script>
-import Drawer from "vue-simple-drawer";
- 
+import Drawer from "vue-simple-drawer"
+import Menu from '../components/Menu';
+
+
 export default {
   name: "App",
   components: {
-    Drawer
+    Drawer,
+    Menu
   },
   data() {
     return {
@@ -27,18 +32,16 @@ export default {
   }
 };
 </script>
-<style lang="scss">
-@import "~bootstrap/scss/bootstrap-reboot",
-"~bootstrap/scss/buttons";
-</style>
-<style lang="scss" scoped>
-    #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #f3f3f3;
-  margin: 0 auto;
-  width: 800px;
-}
+<style scoped>
+   #headerSection {
+     background-color: #f3f3f3;
+     height: auto;
+     width: 100%;
+    }
+
+  .headerButton {
+    box-shadow: none;
+    border-style: none;
+    background-color: #f3f3f3;
+  }
 </style>

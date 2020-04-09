@@ -1,6 +1,6 @@
 <template>
     <div id="drawerSection">
-        <img src="" class="drawerButton">
+        <button  class="drawerButton"><img src="../assets/close.png"></button>
         <ul class="drawerMenuSection">
             <li class="drawerMenuItem">
                 <a herf="" class="drawerMenuItemLink">Home</a>
@@ -20,6 +20,7 @@
             <li class="drawerMenuItem">
                 <a herf="" class="drawerMenuItemLink">Custmoize Item2</a>
             </li>
+        </ul>
     </div>
 </template>
 
@@ -40,5 +41,24 @@ export default {
         background-color: #ffffff;
         width: 100%;
         height: auto;
+    }
+
+    .drawerMenuItem {
+        background-color: #ffffff;
+        width: 100%;
+        height: 50px;
+    }
+
+    .drawerButton {
+        float: right;
+        box-shadow: none;
+        border-style: none;
+   }
+
+    .drawerMenuItemLink {
+        color: #707070;
+        font-family: Noto Sans;
+        font-size: 12px;
+        display:inline;
     }
 </style>
