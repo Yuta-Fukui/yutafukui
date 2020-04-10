@@ -1,10 +1,23 @@
 <template>
   <div id="headerSection">
-    <button @click="toggle" class="headerButton">
-      <img src="../assets/menu.png" width="30px" height="30px">
+    <button
+      class="headerButton"
+      @click="toggle"
+    >
+      <img
+        src="../assets/menu.png"
+        width="30px"
+        height="30px"
+      >
     </button>
-    <Drawer @close="toggle" align="left" :closeable="true">
-      <div v-if="open"><Menu /></div>
+    <Drawer
+      align="left"
+      :closeable="true"
+      @close="toggle"
+    >
+      <div v-if="open">
+        <Menu />
+      </div>
     </Drawer>
   </div>
 </template>
@@ -33,11 +46,11 @@ export default {
 };
 </script>
 <style scoped>
-   #headerSection {
-     background-color: #f3f3f3;
-     height: auto;
-     width: 100%;
-    }
+  #headerSection {
+    background-color: #f3f3f3;
+    height: auto;
+    width: 100%;
+  }
 
   .headerButton {
     box-shadow: none;
