@@ -1,8 +1,11 @@
 <template>
   <div class="mainSection">
-    <div class="userName"></div>
-    <div class="companyName"></div>
-    <img class="profilePicture" src="">
+    <div class="userName" />
+    <div class="companyName" />
+    <img
+      class="profilePicture"
+      src=""
+    >
   </div>
 </template>
  
@@ -11,7 +14,7 @@
 
 <style scoped>
   .mainSection {
-    background: linear-gradient(180deg,#06E1C6,#06C1E6);
+    background: linear-gradient(180deg, #06e1c6, #06c1e6);
     padding-bottom: 30px;
     text-align: center;
   }
