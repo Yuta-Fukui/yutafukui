@@ -7,7 +7,7 @@
       <img
         src="../assets/menu.png"
         width="30px"
-        height="30px"
+        weight="30px"
       >
     </button>
     <Drawer
@@ -21,14 +21,14 @@
     </Drawer>
   </div>
 </template>
- 
+
 <script>
 import Drawer from "vue-simple-drawer"
 import Menu from '../components/Menu';
 
 
 export default {
-  name: "App",
+  name: "Header",
   components: {
     Drawer,
     Menu

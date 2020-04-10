@@ -6,39 +6,51 @@
     <ul class="drawerMenuSection">
       <li class="drawerMenuItem">
         <a
-          herf=""
+          href="../components/About.vue"
           class="drawerMenuItemLink"
-        >Home</a>
+        >
+          Home
+        </a>
       </li>
       <li class="drawerMenuItem">
         <a
-          herf=""
+          href="../components/About.vue"
           class="drawerMenuItemLink"
-        >About Me</a>
+        >
+          About me
+        </a>
       </li>
       <li class="drawerMenuItem">
         <a
-          herf=""
+          href="../components/About.vue"
           class="drawerMenuItemLink"
-        >Skill Sets</a>
+        >
+          Skill Sets
+        </a>
       </li>
       <li class="drawerMenuItem">
         <a
-          herf=""
+          href="../components/About.vue"
           class="drawerMenuItemLink"
-        >Vision</a>
+        >
+          Vision
+        </a>
       </li>
       <li class="drawerMenuItem">
         <a
-          herf=""
+          href="../components/About.vue"
           class="drawerMenuItemLink"
-        >Custmoize Item1</a>
+        >
+          Customize Item1
+        </a>
       </li>
       <li class="drawerMenuItem">
         <a
-          herf=""
+          href="../components/About.vue"
           class="drawerMenuItemLink"
-        >Custmoize Item2</a>
+        >
+          Customize Item2
+        </a>
       </li>
     </ul>
   </div>
@@ -67,6 +79,7 @@ export default {
     background-color: #fff;
     width: 100%;
     height: 50px;
+    list-style: none;
   }
 
   .drawerButton {
@@ -78,6 +91,7 @@ export default {
   .drawerMenuItemLink {
     color: #707070;
     font-size: 12px;
+    font-family: 'Noto Sans JP', sans-serif;
     display: inline;
   }
 </style>
