@@ -16,7 +16,7 @@
       @close="toggle"
     >
       <div v-if="open">
-        <Menu />
+        menu
       </div>
     </Drawer>
   </div>
@@ -24,14 +24,12 @@
 
 <script>
 import Drawer from "vue-simple-drawer"
-import Menu from '../components/Menu';
 
 
 export default {
   name: "Header",
   components: {
     Drawer,
-    Menu
   },
   data() {
     return {
@@ -55,6 +53,7 @@ export default {
   .headerButton {
     box-shadow: none;
     border-style: none;
+    margin-top: 5px;
     background-color: #f3f3f3;
   }
 </style>
