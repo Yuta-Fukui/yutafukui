@@ -6,7 +6,7 @@
     <ul class="drawerMenuSection">
       <li class="drawerMenuItem">
         <a
-          href="../components/About.vue"
+          href="../components/Main.vue"
           class="drawerMenuItemLink"
         >
           Home
@@ -22,7 +22,7 @@
       </li>
       <li class="drawerMenuItem">
         <a
-          href="../components/About.vue"
+          href="../components/Skill.vue"
           class="drawerMenuItemLink"
         >
           Skill Sets
@@ -30,26 +30,10 @@
       </li>
       <li class="drawerMenuItem">
         <a
-          href="../components/About.vue"
+          href="../components/Vision.vue"
           class="drawerMenuItemLink"
         >
           Vision
-        </a>
-      </li>
-      <li class="drawerMenuItem">
-        <a
-          href="../components/About.vue"
-          class="drawerMenuItemLink"
-        >
-          Customize Item1
-        </a>
-      </li>
-      <li class="drawerMenuItem">
-        <a
-          href="../components/About.vue"
-          class="drawerMenuItemLink"
-        >
-          Customize Item2
         </a>
       </li>
     </ul>
@@ -58,7 +42,7 @@
 
 <script>
 export default {
-
+  name: 'Menu',
 }
 </script>
 

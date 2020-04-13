@@ -13,7 +13,7 @@
     </div>
     <img
       class="profilePicture"
-      src="../assets/menu.png"
+      src="../assets/yuta.png"
     >
   </div>
 </template>
@@ -29,7 +29,7 @@
 
   .mainSection {
     background: linear-gradient(-135deg, #06e1c6, #06c1e6);
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     padding-top: 10px;
     text-align: center;
   }
@@ -38,7 +38,7 @@
     width: 300px;
     size: 20px;
     margin: auto;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
 
   .userName {
@@ -48,7 +48,7 @@
     font-size: 18px;
     height: auto;
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     padding-top: 10px;
   }
 
@@ -57,7 +57,7 @@
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
     font-size: 18px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
 
   .profilePicture {
