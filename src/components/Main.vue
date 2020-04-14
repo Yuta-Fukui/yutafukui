@@ -1,5 +1,5 @@
 <template>
-  <div class="mainSection">
+  <div id="mainSection">
     <div
       class="userName"
     >
@@ -27,7 +27,7 @@
 <style scoped>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
-  .mainSection {
+  #mainSection {
     background: linear-gradient(-135deg, #06e1c6, #06c1e6);
     padding-bottom: 15px;
     padding-top: 10px;

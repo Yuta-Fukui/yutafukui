@@ -11,28 +11,46 @@
       class="gitHubLink"
     >https://github.com/Yuta-Fukui/</a></label>
     <div class="skillCategories">
-      <a class="Frontend">Frontend</a>
-      <a class="Backend">Backend</a>
-      <a class="DevOps">DevOps</a>
+      <a class="front">Frontend</a>
+      <a class="back">Backend</a>
+      <a class="dev">DevOps</a>
     </div>
     <div class="skillList">
-      <p class="Frontends">
-        skill
-      </p>
-      <p class="Backends">
-        skill
-      </p>
-      <p class="DevOpses">
-        skill
-      </p>
+      <ul class="Frontend">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>SCSS</li>
+        <li>Vue</li>
+      </ul>
+      <ul class="Backend">
+        <li>java</li>
+        <li>Ruby</li>
+        <li>RubyonRails</li>
+        <li>MySQL</li>
+      </ul>
+      <ul class="DevOps">
+        <li>Linux</li>
+        <li>Node</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>Firebase</li>
+      </ul>
     </div>
-    <div class="skillGraph" />
+    <div class="skillGraph">
+      <Frontend class="frontend-chart" />
+    </div>
   </div>
 </template>
 
 <script>
+import Frontend from '../components/Frontend.vue'
+
 export default {
   name: 'Skill',
+  components: {
+    Frontend
+  }
 }
 </script>
 
@@ -83,29 +101,30 @@ export default {
     padding-top: 10px;
   }
 
-  .Frontend {
+  .front {
     color: rgba(181, 26, 26, 0.75);
     padding-right: 5px;
   }
 
-  .Backend {
+  .back {
     color: rgba(15, 136, 57, 0.75);
     padding-right: 5px;
   }
 
-  .DevOps {
+  .dev {
     color: rgba(87, 16, 131, 0.75);
   }
 
   .skillList {
     height: 30px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
-    display: flex;
+    display: inline-block;
     width: 75%;
+    text-align: center;
   }
 
-  .Frontends {
+  .Frontend li {
     color: rgba(181, 26, 26, 0.75);
     background-color: rgba(181, 26, 26, 0.25);
     list-style: none;
@@ -113,9 +132,10 @@ export default {
     padding: 5px;
     box-shadow: 2px 2px 3px #7d8079;
     border: 5px, solid, #fff;
+    float: left;
   }
 
-  .Backends {
+  .Backend li {
     color: rgba(15, 136, 57, 0.75);
     background-color: rgba(15, 136, 57, 0.25);
     list-style: none;
@@ -123,9 +143,10 @@ export default {
     box-shadow: 2px 2px 3px #7d8079;
     border: 5px, solid, #fff;
     padding: 5px;
+    float: left;
   }
 
-  .DevOpses {
+  .DevOps li {
     color: rgba(87, 16, 131, 0.75);
     background-color: rgba(87, 16, 131, 0.25);
     list-style: none;
@@ -133,10 +154,6 @@ export default {
     box-shadow: 2px 2px 3px #7d8079;
     border: 5px, solid, #fff;
     padding: 5px;
-  }
-
-  .skillGraph {
-    color: rgba(181, 26, 26, 0.75);
-    background-color: rgba(181, 26, 26, 0.25);
+    float: left;
   }
 </style>
