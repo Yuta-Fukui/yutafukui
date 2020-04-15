@@ -45,6 +45,10 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 #app {
   width: 100%;
   height: auto;

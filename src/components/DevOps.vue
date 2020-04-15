@@ -2,21 +2,21 @@
 import { Radar } from 'vue-chartjs';
 
 export default {
-  name: 'Frontend',
+  name: 'DevOps',
   extends: Radar,
   data () {
     return {
       data: {
-        labels: ['HTML', 'CSS', 'Javascript', 'SCSS', 'Vue', ],
+        labels: ['Linux', 'Node', 'Git', 'GitHub', 'Firebase'],
         datasets: [
           {
-            label: 'Frontend',
-            data: [3, 2, 3, 4, 5],
+            label: 'DevOps',
+            data: [3, 4, 3, 5, 2],
             backgroundColor: [
-              'rgba(181, 26, 26, 0.5)'
+              'rgba(87, 16, 131, 0.5)'
             ],
             borderColor: [
-              'rgba(181, 26, 26, 0.5)',
+              'rgba(87, 16, 131, 0.5)',
               'rgba(54, 162, 235, 1)',
               'rgba(255, 206, 86, 1)',
               'rgba(75, 192, 192, 1)',
@@ -28,17 +28,17 @@ export default {
         ]
       },
       options: {
+        responsive: true, // ウィンドウのサイズによってグラフの大きさが変わるか
         scale: {
-          ticks: {
+            ticks: {
             suggestedMax: 5,
             suggestedMin: 0,
             stepSize: 1,
-            }
           }
-
       }
     }
-  },
+  }
+},
   mounted () {
     this.renderChart(this.data, this.options)
   }
