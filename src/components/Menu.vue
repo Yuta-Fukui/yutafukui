@@ -80,7 +80,6 @@ export default {
     width: 100%;
     height: auto;
     padding: 20px 10px;
-    padding-bottom: 10px;
     border: 1px solid  #f3f3f3;
   }
 

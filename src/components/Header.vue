@@ -36,7 +36,6 @@ export default {
   background-color: #f3f3f3;
   height: auto;
   width: 100%;
-  padding: 10px;
 }
 
 #nav-drawer {
@@ -54,6 +53,7 @@ export default {
   width: 30px;
   height: 22px;
   vertical-align: middle;
+  padding: 10px;
 }
 
 /* ハンバーガーアイコンをCSSだけで表現 */
@@ -87,7 +87,6 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: black;
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
