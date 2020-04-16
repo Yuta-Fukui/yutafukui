@@ -4,7 +4,9 @@
       Skill Set
     </div>
     <div class="skillExplain">
-      自分の能力を高めるために、どんどん出来ないことにチャレンジしていきます。IT技術は0からのスタートなので、トライ＆エラーを繰り返していくことで力を蓄えていき、困難なことにも挑戦し続ける事の出来る人間を目指します。
+      スキルについてまとめました。Front-Endに関しては、未経験というのもあってまだまだ慣れていない部分も多々ありますが、少しずつ仕組みを理解できていると思います。Back-Endに関しては研修で触れたものもありますが、まだまだ自走できる状態にはありません。これからどんどん経験を積んでいきたいと思います。
+      <br>
+      グラフは五段階で自分を評価しました。Front-Endに関しては、これまでの研修でどれだけ知識が入って今回のポートフォリオ実装で活かすことが出来たかで判断しています。Back-End、DevOpsに関しては、これまでの研修でどれだけ知識が入ったかで判断しています。
     </div>
     <label class="gitHubLabel">GitHub:<a
       href="https://github.com/Yuta-Fukui/"
@@ -114,6 +116,8 @@ export default {
     width: 100%;
     height: auto;
     text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
   }
 
   .skillTitle {
@@ -128,10 +132,11 @@ export default {
   .skillExplain {
     color: #707070;
     font-size: 12px;
+    font-weight: bold;
     flex-wrap: wrap;
-    line-height: 16px;
-    padding-bottom: 10px;
-    width: 75%;
+    line-height: 20px;
+    padding-bottom: 20px;
+    width: 80%;
     margin: auto;
     text-align: left;
   }
@@ -147,36 +152,37 @@ export default {
   }
 
   #skillCategories {
-    padding-top: 10px;
+    padding-top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #7d8079;
   }
 
   .front {
     color: rgba(181, 26, 26, 0.75);
     padding-right: 10px;
-    cursor: pointer;
   }
 
   .back {
     color: rgba(15, 136, 57, 0.75);
-    cursor: pointer;
   }
 
   .dev {
     color: rgba(87, 16, 131, 0.75);
     padding-left: 10px;
-    cursor: pointer;
   }
 
   #skillList {
-    height: 30px;
-    margin: 10px 20px 10px 20px;
+    height: 50px;
+    margin: 20px 20px 0 20px;
     width: auto;
-    text-align: center;
+    display: inline-block;
+    cursor: default;
   }
 
-  li {
-    margin: 10px 10px;
-    display: inline-block;
+  #skillList :hover {
+    border-bottom-color: transparent;
+    transform: translateY(0.1875em);
   }
 
   .frontend-change li {
@@ -201,6 +207,7 @@ export default {
 
   .devOps li {
     color: rgba(87, 16, 131, 0.75);
+    margin-bottom: 10px;
   }
 
   #skillList li {
@@ -208,12 +215,15 @@ export default {
     margin: 5px 5px 10px 5px;
     box-shadow: 2px 2px 3px #7d8079;
     border: 5px, solid, #fff;
+    border-radius: 10%;
     padding: 5px;
+    display: inline-block;
   }
 
   #skillchart {
     width: 300px;
     height: 300px;
-    margin: 100px auto 20px auto;
+    margin: 0 auto;
+    padding-top: 50px;
   }
 </style>

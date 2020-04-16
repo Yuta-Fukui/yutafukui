@@ -53,5 +53,11 @@ export default {
     border-radius: 50%;
     top: -10px;
     position: relative;
+    transition: all 0.3s ease 0s;
+  }
+
+  .footerScroll :hover {
+    border-bottom-color: transparent;
+    transform: translateY(0.1875em);
   }
 </style>
