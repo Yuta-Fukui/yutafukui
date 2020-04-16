@@ -33,8 +33,6 @@ export default {
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
-
   .footerSection {
     background: linear-gradient(-135deg, #06e1c6, #06c1e6);
     padding-bottom: 15px;
@@ -44,7 +42,6 @@ export default {
 
   .footerCopyright {
     color: #fff;
-    font-family: 'Noto Sans JP', sans-serif;
     font-size: 12px;
     font-weight: bold;
   }

@@ -1,35 +1,38 @@
 <template>
   <div id="drawerSection">
-    <div class="drawerButton">
+    <label
+      for="nav-input"
+      class="drawerButton"
+    >
       <img src="../assets/close.png">
-    </div>
+    </label>
     <ul class="drawerMenuSection">
       <li class="drawerMenuItem">
         <a
           href="#app"
           class="drawerMenuItemLink"
-          @click="clickSmoothScroll()"
+          @click="clickSmoothScroll('#mainSection')"
         >Home</a>
       </li>
       <li class="drawerMenuItem">
         <a
           href="#about"
           class="drawerMenuItemLink"
-          @click="clickSmoothScroll()"
+          @click="clickSmoothScroll('#aboutSection')"
         >About me</a>
       </li>
       <li class="drawerMenuItem">
         <a
           href="#skill"
           class="drawerMenuItemLink"
-          @click="clickSmoothScroll()"
+          @click="clickSmoothScroll('#skillSection')"
         >Skill Sets</a>
       </li>
       <li class="drawerMenuItem">
         <a
           href="#vision"
           class="drawerMenuItemLink"
-          @click="clickSmoothScroll()"
+          @click="clickSmoothScroll('#visionSection')"
         >Vision</a>
       </li>
     </ul>
@@ -39,11 +42,13 @@
 <script>
 export default {
   methods: {
-    clickSmoothScroll () {
+    clickSmoothScroll (Section) {
       event.preventDefault()
       this.$SmoothScroll(
-        document.querySelector('#app'),
+        document.querySelector(Section),
         400,
+        null,
+        null,
         'y'
       )
     }
@@ -67,6 +72,7 @@ export default {
   img {
     float: right;
     padding: 10px;
+    cursor: pointer;
   }
 
   .drawerMenuItem {
@@ -74,7 +80,6 @@ export default {
     width: 100%;
     height: auto;
     padding: 20px 10px;
-    padding-bottom: 10px;
     border: 1px solid  #f3f3f3;
   }
 

@@ -25,7 +25,6 @@
 
   .aboutTitle {
     color: #20879f;
-    font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
     font-size: 18px;
     text-shadow: 2px 2px 3px #7d8079;
@@ -36,7 +35,6 @@
 
   .aboutExplain {
     color: #707070;
-    font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
     font-size: 12px;
     flex-wrap: wrap;
