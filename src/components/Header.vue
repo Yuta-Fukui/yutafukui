@@ -8,14 +8,23 @@
     <label
       id="nav-open"
       for="nav-input"
-    ><span /></label>
+    ><img
+      src="../assets/menu.png"
+      width="25px"
+      height="25px"
+      @click="openMenu"
+    >
+    </label>
     <label
       id="nav-close"
       class="nav-unshown"
       for="nav-input"
     />
-    <div id="nav-content">
-      <Menu />
+    <div
+      id="nav-content"
+      :class="{'nav-unshown' : isActive}"
+    >
+      <Menu @close="closedMenu" />
     </div>
   </div>
 </template>
@@ -28,6 +37,19 @@ export default {
    components: {
     Menu
   },
+  data() {
+    return{
+      isActive: false
+    }
+  },
+   methods: {
+     closedMenu() {
+      this.isActive= true
+     },
+    openMenu() {
+      this.isActive= false
+    }
+  }
 };
 </script>
 
@@ -36,6 +58,12 @@ export default {
   background-color: #f3f3f3;
   height: auto;
   width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+img {
+  cursor: pointer;
 }
 
 #nav-drawer {
@@ -44,7 +72,7 @@ export default {
 
 /* チェックボックス等は非表示に */
 .nav-unshown {
-  display: none;
+  display: none;/* はじめは隠しておく */
 }
 
 /* アイコンのスペース */
@@ -54,28 +82,6 @@ export default {
   height: 22px;
   vertical-align: middle;
   padding: 10px;
-}
-
-/* ハンバーガーアイコンをCSSだけで表現 */
-#nav-open span,
-#nav-open span::before,
-#nav-open span::after {
-  position: absolute;
-  height: 3px;/* 線の太さ */
-  width: 25px;/* 長さ */
-  border-radius: 3px;
-  background: #555;
-  display: block;
-  content: '';
-  cursor: pointer;
-}
-
-#nav-open span::before {
-  bottom: -8px;
-}
-
-#nav-open span::after {
-  bottom: -16px;
 }
 
 /* 閉じる用の薄黒カバー */

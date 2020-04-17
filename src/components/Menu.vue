@@ -1,10 +1,13 @@
 <template>
   <div id="drawerSection">
     <label
+      id="drawerButton"
       for="nav-input"
-      class="drawerButton"
     >
-      <img src="../assets/close.png">
+      <div class="btn">
+        <img src="../assets/close.png">
+      </div>
+
     </label>
     <ul class="drawerMenuSection">
       <li class="drawerMenuItem">
@@ -42,15 +45,16 @@
 <script>
 export default {
   methods: {
-    clickSmoothScroll (Section) {
+    clickSmoothScroll (section) {
       event.preventDefault()
       this.$SmoothScroll(
-        document.querySelector(Section),
+        document.querySelector(section),
         400,
         null,
         null,
-        'y'
-      )
+        'y',
+      );
+      this.$emit('close')
     }
   }
 }
@@ -63,10 +67,18 @@ export default {
     height: auto;
   }
 
-  .drawerButton {
-    background-color: #f3f3f3;
-    width: 100%;
-    height: 30px;
+  #drawerButton {
+    width: 100px;
+  }
+
+  .btn {
+    height: 40px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .btn :hover {
+    border-bottom-color: transparent;
+    transform: translateY(0.1875em);
   }
 
   img {
@@ -78,7 +90,7 @@ export default {
   .drawerMenuItem {
     background-color: #fff;
     width: 100%;
-    height: auto;
+    height: 20px;
     padding: 20px 10px;
     border: 1px solid  #f3f3f3;
   }
@@ -86,8 +98,12 @@ export default {
   .drawerMenuItemLink {
     color: #707070;
     font-size: 12px;
-    font-family: 'Noto Sans JP', sans-serif;
-    display: inline;
     text-decoration: none;
+    transition: all 0.3s ease 0s;
+  }
+
+  .drawerMenuItemLink :hover {
+    border-bottom-color: transparent;
+    transform: translateY(0.1875em);
   }
 </style>

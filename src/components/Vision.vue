@@ -4,7 +4,11 @@
       Vision
     </div>
     <div class="visionExplain">
-      自分の能力を高めるために、どんどん出来ないことにチャレンジしていきます。IT技術は0からのスタートなので、トライ＆エラーを繰り返していくことで力を蓄え、困難なことにも挑戦し続ける事の出来る人間を目指します。
+      将来の目標としている人物は「ドラえもん」ののび太くんです。彼のもつ優しさは誰にも勝るものだと思い、憧れてきました。
+      <br>
+      そのために必要なことは誰よりも余裕のある人物になることだと思っています。それには自分のキャパシティを大きくすることが必要です。
+      <br>
+      なので、自分の能力を高め、キャパシティを大きくしていくために、どんどん出来ないことにチャレンジしていきます。IT技術は0からのスタートなので、トライ＆エラーを繰り返していくことで能力を高めていこうと思います。
     </div>
   </div>
 </template>
@@ -20,6 +24,7 @@ export default {
     background-color: #f5f5f5;
     width: 100%;
     height: auto;
+    padding-top: 20px;
   }
 
   .visionTitle {
@@ -39,9 +44,9 @@ export default {
     font-weight: bold;
     font-size: 12px;
     flex-wrap: wrap;
-    line-height: 16px;
+    line-height: 20px;
     padding-bottom: 20px;
-    width: 75%;
+    width: 80%;
     margin: auto;
   }
 </style>

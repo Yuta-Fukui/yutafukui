@@ -29,9 +29,10 @@
 
   #mainSection {
     background: linear-gradient(-135deg, #06e1c6, #06c1e6);
-    padding-bottom: 15px;
-    padding-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 25px;
     text-align: center;
+    border-bottom: solid 1px #cbcbcb;
   }
 
   hr {
