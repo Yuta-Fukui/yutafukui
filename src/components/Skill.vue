@@ -1,9 +1,9 @@
 <template>
   <div id="skillSection">
-    <div class="skillTitle">
+    <div class="title skillTitle">
       Skill Set
     </div>
-    <div class="skillExplain">
+    <div class="explain skillExplain">
       スキルについてまとめました。Front-Endに関しては、未経験というのもあってまだまだ慣れていない部分も多々ありますが、少しずつ仕組みを理解できていると思います。Back-Endに関しては研修で触れたものもありますが、まだまだ自走できる状態にはありません。これからどんどん経験を積んでいきたいと思います。
       <br>
       グラフは五段階で自分を評価しました。Front-Endに関しては、これまでの研修でどれだけ知識が入って今回のポートフォリオ実装で活かすことが出来たかで判断しています。Back-End、DevOpsに関しては、これまでの研修でどれだけ知識が入ったかで判断しています。
@@ -120,24 +120,7 @@ export default {
     padding-bottom: 30px;
   }
 
-  .skillTitle {
-    color: #20879f;
-    font-weight: bold;
-    font-size: 18px;
-    text-shadow: 2px 2px 3px #7d8079;
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
-
   .skillExplain {
-    color: #707070;
-    font-size: 12px;
-    font-weight: bold;
-    flex-wrap: wrap;
-    line-height: 20px;
-    padding-bottom: 20px;
-    width: 80%;
-    margin: auto;
     text-align: left;
   }
 
@@ -151,16 +134,28 @@ export default {
     font-size: 12px;
   }
 
+  .gitHubLink :hover {
+    border-bottom-color: transparent;
+    transform: translateY(0.1875em);
+  }
+
   #skillCategories {
     padding-top: 20px;
     cursor: pointer;
     font-size: 18px;
     text-shadow: 1px 1px 1px #7d8079;
+    transition: all 0.3s ease 0s;
+  }
+
+  #skillCategories :hover {
+    border-bottom-color: transparent;
+    transform: translateY(0.1875em);
   }
 
   .front {
     color: rgba(181, 26, 26, 0.75);
     padding-right: 10px;
+    transition: all 0.3s ease 0s;
   }
 
   .back {
@@ -178,11 +173,6 @@ export default {
     width: auto;
     display: inline-block;
     cursor: default;
-  }
-
-  #skillList :hover {
-    border-bottom-color: transparent;
-    transform: translateY(0.1875em);
   }
 
   .frontend-change li {
@@ -214,7 +204,7 @@ export default {
     list-style: none;
     margin: 5px 5px 10px 5px;
     box-shadow: 2px 2px 3px #7d8079;
-    border: 5px, solid, #fff;
+    border: 1px, solid, #fff;
     border-radius: 10%;
     padding: 5px;
     display: inline-block;

@@ -54,4 +54,26 @@ export default {
   height: auto;
   box-sizing: border-box;
 }
+
+.title {
+  color: #20879f;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  text-shadow: 2px 2px 3px #7d8079;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.explain {
+  color: #707070;
+  font-size: 12px;
+  font-weight: bold;
+  flex-wrap: wrap;
+  line-height: 20px;
+  padding-bottom: 20px;
+  width: 80%;
+  margin: auto;
+}
 </style>

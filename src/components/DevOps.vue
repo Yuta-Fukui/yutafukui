@@ -13,7 +13,7 @@ export default {
             label: 'DevOps',
             data: [3, 4, 3, 5, 2],
             backgroundColor: [
-              'rgba(87, 16, 131, 0.5)'
+              'rgba(87, 16, 131, 0.25)'
             ],
             borderColor: [
               'rgba(87, 16, 131, 0.5)',

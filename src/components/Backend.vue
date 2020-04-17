@@ -13,7 +13,7 @@ export default {
             label: 'Backend',
             data: [2, 4, 3,3],
             backgroundColor: [
-              'rgba(15, 136, 57, 0.5)'
+              'rgba(15, 136, 57, 0.25)'
             ],
             borderColor: [
               'rgba(15, 136, 57, 0.5)',

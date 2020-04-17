@@ -13,7 +13,7 @@ export default {
             label: 'Frontend',
             data: [4, 3, 3, 2, 3],
             backgroundColor: [
-              'rgba(181, 26, 26, 0.5)'
+              'rgba(181, 26, 26, 0.25)'
             ],
             borderColor: [
               'rgba(181, 26, 26, 0.5)',
@@ -34,9 +34,9 @@ export default {
             stepSize: 1,
             }
           },
-          legend: {
-            display: false,
-          }
+        legend: {
+          display: false,
+        }
       }
     }
   },
