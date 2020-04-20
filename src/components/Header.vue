@@ -122,5 +122,4 @@ img {
   transform: translateX(0%);/* 中身を表示（右へスライド） */
   box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
 }
-
 </style>
