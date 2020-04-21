@@ -11,12 +11,18 @@
     <div class="footerCopyright">
       ©︎ Seattleconsulting
     </div>
+    <p>{{ sample }}</p>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Footer',
+  computed: {
+     sample(){
+      return this.$store.getters.function
+   }
+  },
   methods: {
     clickSmoothScroll () {
       event.preventDefault()

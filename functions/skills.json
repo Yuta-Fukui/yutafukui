@@ -1,74 +1,79 @@
 {
-  "skills": [
-    {
+  "skillCategories": [
+  {
       "category": "Frontend",
-      "name": "HTML",
-      "score": 4
-    },
-    {
-      "category": "Frontend",
-      "name": "CSS",
-      "score": 3
-    },
-    {
-      "category": "Frontend",
-      "name": "Javascript",
-      "score": 3
-    },
-    {
-      "category": "Frontend",
-      "name": "SCSS",
-      "score": 2
-    },
-    {
-      "category": "Frontend",
-      "name": "Vue",
-      "score": 3
-    },
-    {
+      "skill":
+    [ {
+        "name": "HTML",
+        "score": 4
+      },
+      {
+        "name": "CSS",
+        "score": 3
+      },
+      {
+        "category": "Frontend",
+        "name": "Javascript",
+        "score": 3
+      },
+      {
+        "category": "Frontend",
+        "name": "SCSS",
+        "score": 2
+      },
+      {
+        "category": "Frontend",
+        "name": "Vue",
+        "score": 3
+      }
+    ]
+  },
+  {
       "category": "Backend",
-      "name": "Java",
-      "score": 2
-    },
-    {
+      "skill":
+    [ {
+        "name": "Java",
+        "score": 2
+      },
+      {
+        "name": "Ruby",
+        "score": 4
+      },
+      {
+        "name": "RubyonRails",
+        "score": 3
+      },
+      {
+        "name": "MySQL",
+        "score": 3
+      }
+    ]
+  },
+  {
       "category": "Backend",
-      "name": "Ruby",
-      "score": 4
-    },
-    {
-      "category": "Backend",
-      "name": "RubyonRails",
-      "score": 3
-    },
-    {
-      "category": "Backend",
-      "name": "MySQL",
-      "score": 3
-    },
-    {
-      "category": "DevOps",
+      "skill":
+    [
+      {
       "name": "Linux'",
       "score": 3
-    },
-    {
-      "category": "DevOps",
+      },
+      {
       "name": "Node",
       "score": 4
-    },
-    {
-      "category": "DevOps",
+      },
+      {
       "name": "Git",
       "score": 3
-    },
-    {
-      "category": "DevOps",
+      },
+      {
       "name": "GitHub",
       "score": 5
-    },
-    {
-      "category": "DevOps",
+      },
+      {
       "name": "Firebase",
       "score": 2
+      }
+     ]
     }
   ]
 }
