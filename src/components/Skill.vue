@@ -59,7 +59,7 @@
     </div>
     <div id="skillchart">
       <Frontend
-        v-if="isFrontActive"
+        v-if="isFrontActive && loaded"
         id="frontchart"
       />
       <Backend
@@ -100,6 +100,9 @@ export default {
     },
     isDevActive() {
       return this.currentChart == 'dev';
+    },
+    loaded() {
+      return this.$store.state.loaded
     }
   },
     methods: {

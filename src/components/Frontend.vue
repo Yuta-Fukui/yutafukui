@@ -7,11 +7,11 @@ export default {
   data () {
     return {
       data: {
-        labels: ['HTML', 'CSS', 'Javascript', 'SCSS', 'Vue', ],
+        labels: [],
         datasets: [
           {
             label: 'Frontend',
-            data: [4, 3, 3, 2, 3],
+            data: [],
             backgroundColor: [
               'rgba(181, 26, 26, 0.25)'
             ],
@@ -40,8 +40,19 @@ export default {
       }
     }
   },
+
   mounted () {
+    this.getSkills()
     this.renderChart(this.data, this.options)
+  },
+  methods: {
+    getSkills() {
+      const frontInfo = this.$store.getters.getSkills('Frontend')
+      frontInfo.skill.forEach((skill) => {
+        this.data.labels.push(skill.name)
+        this.data.datasets[0].data.push(skill.score)
+      })
+    },
   }
 }
 </script>

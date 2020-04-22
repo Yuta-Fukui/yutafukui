@@ -12,17 +12,14 @@
         "score": 3
       },
       {
-        "category": "Frontend",
         "name": "Javascript",
         "score": 3
       },
       {
-        "category": "Frontend",
         "name": "SCSS",
         "score": 2
       },
       {
-        "category": "Frontend",
         "name": "Vue",
         "score": 3
       }
@@ -50,7 +47,7 @@
     ]
   },
   {
-      "category": "Backend",
+      "category": "DevOps",
       "skill":
     [
       {

@@ -5,14 +5,25 @@ import axios from 'axios'
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
-   state: {
+  state: {
     skills: [],
+    loaded: false
+  },
+
+  getters: {
+    getSkills: (state) => (category) => {
+      if (state.skills.length > 0) {
+        return state.skills.find((skill) => skill.category===category);
+      }
+      return [];
+    },
   },
 
   mutations: {
-    setSkills(state,skillsAllay) {
-      state.skills = skillsAllay.setSkills;
-    },
+    setSkills(state,payload) {
+      state.skills = payload.skills
+      state.loaded = true;
+    }
   },
 
   actions: {
@@ -23,7 +34,7 @@ const store = new Vuex.Store({
         skills.push(skill);
       });
       commit('setSkills' , {skills});
-     },
+    }
   },
-});
+})
 export default store
