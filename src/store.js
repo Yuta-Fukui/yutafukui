@@ -1,38 +1,29 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import axios from 'axios'
 
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
-
-  //state:コンポーネントでいうdata
-  state: {
-    api: ''
+   state: {
+    skills: [],
   },
 
-  //getters:コンポーネントでいうcomputed的なもの
-  getters:{
-    //messageを使用するgetter
-    api(state) {
-      return state.skills
-    }
-  },
-
-  //mutations:コンポーネントでいうmethod（と言うかsetter）
-  //stateを唯一変更できるもの
   mutations: {
-    //vuexでは引数をpayloadと呼ぶっぽい
-    //payloadはオブジェクトにするべき（いっぱい入れれるし）
-    functionAPI (state,payload){
-      state.skills = payload.skills
-    }
+    setSkills(state,skillsAllay) {
+      state.skills = skillsAllay.setSkills;
+    },
   },
 
-  //actionのコミットを使うことでミューテーションを呼び出す（コンポーネントには無い概念）
   actions: {
-    doUpdate(commit, skills){
-      commit('functionAPI', skills)
-    }
-  }
-})
+    async updateSkills({commit}) {
+      const skills = [];
+      const res = await axios.get('https://us-central1-portfolio-249d8.cloudfunctions.net/skillCategories');
+      res.data.forEach((skill) => {
+        skills.push(skill);
+      });
+      commit('setSkills' , {skills});
+     },
+  },
+});
 export default store
