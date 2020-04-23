@@ -30,7 +30,9 @@ const store = new Vuex.Store({
     async updateSkills({commit}) {
       const skills = [];
       const functionsUrl = 'https://us-central1-' + process.env.VUE_APP_FUNCTIONS_API + '.cloudfunctions.net/skillCategories';
-      const res = await axios.get(functionsUrl);
+      /* eslint-disable no-debugger */
+      debugger
+      const res = await axios.get(functionsUrl)
       res.data.forEach((skill) => {
         skills.push(skill);
       });
