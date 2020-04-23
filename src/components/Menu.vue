@@ -29,7 +29,7 @@
           href="#skill"
           class="drawerMenuItemLink"
           @click="clickSmoothScroll('#skillSection')"
-        >Skill Sets</a>
+        >Skill Set</a>
       </li>
       <li class="drawerMenuItem">
         <a
@@ -81,6 +81,13 @@ export default {
     transform: translateY(0.1875em);
   }
 
+  .btn :active {
+    text-decoration: none;
+    position: relative;
+    top: 1px;
+    left: 1px;
+  }
+
   img {
     float: right;
     padding: 10px;
@@ -91,19 +98,22 @@ export default {
     background-color: #fff;
     width: 100%;
     height: 20px;
-    padding: 20px 10px;
+    padding: 20px 0;
     border: 1px solid  #f3f3f3;
   }
 
-  .drawerMenuItemLink {
+  a {
     color: #707070;
     font-size: 12px;
     text-decoration: none;
+    padding-left: 10px;
     transition: all 0.3s ease 0s;
   }
 
-  .drawerMenuItemLink :hover {
-    border-bottom-color: transparent;
-    transform: translateY(0.1875em);
+  a:active {
+    text-decoration: none;
+    position: relative;
+    top: 1px;
+    left: 1px;
   }
 </style>

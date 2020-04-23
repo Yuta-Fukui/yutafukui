@@ -7,13 +7,13 @@ export default {
   data () {
     return {
       data: {
-        labels: ['Linux', 'Node', 'Git', 'GitHub', 'Firebase'],
+        labels: [],
         datasets: [
           {
             label: 'DevOps',
-            data: [3, 4, 3, 5, 2],
+            data: [],
             backgroundColor: [
-              'rgba(87, 16, 131, 0.5)'
+              'rgba(87, 16, 131, 0.25)'
             ],
             borderColor: [
               'rgba(87, 16, 131, 0.5)',
@@ -42,7 +42,17 @@ export default {
   }
 },
   mounted () {
+    this.getSkills()
     this.renderChart(this.data, this.options)
+  },
+  methods: {
+    getSkills() {
+      const frontInfo = this.$store.getters.getSkills('DevOps')
+      frontInfo.skill.forEach((skill) => {
+        this.data.labels.push(skill.name)
+        this.data.datasets[0].data.push(skill.score)
+      })
+    },
   }
 }
 </script>

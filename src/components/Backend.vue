@@ -7,13 +7,13 @@ export default {
   data () {
     return {
       data: {
-        labels: ['Java', 'Ruby', 'RubyonRails', 'MySQL'],
+        labels: [],
         datasets: [
           {
             label: 'Backend',
-            data: [2, 4, 3,3],
+            data: [],
             backgroundColor: [
-              'rgba(15, 136, 57, 0.5)'
+              'rgba(15, 136, 57, 0.25)'
             ],
             borderColor: [
               'rgba(15, 136, 57, 0.5)',
@@ -42,7 +42,17 @@ export default {
     }
   },
   mounted () {
+    this.getSkills()
     this.renderChart(this.data, this.options)
+  },
+  methods: {
+    getSkills() {
+      const frontInfo = this.$store.getters.getSkills('Backend')
+      frontInfo.skill.forEach((skill) => {
+        this.data.labels.push(skill.name)
+        this.data.datasets[0].data.push(skill.score)
+      })
+    },
   }
 }
 </script>
